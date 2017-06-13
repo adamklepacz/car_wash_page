@@ -1,0 +1,185 @@
+@charset "utf-8";
+/*------------------------------------------------------------------
+[Responsive Stylesheet]
+
+Project: Adam Klepacz
+Comment: Breakpoints were created in reference to "content breakpoints"
+         so where content collapse, and not to "devives widths".
+
+-------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------
+[Table of contents]
+
+1. Content under 1240px
+2. Content under 1030px
+3. Content under 991px
+4. Content under 840px
+5. Content under 767px
+6. Content under 650px
+7. Content under 520px
+8. Content under 445px
+9. Content under 425px
+10.Content under 375px
+11.Content under 325px
+-------------------------------------------------------------------*/
+
+/* ==============================
+    Content under 1240 px
+   ============================== */
+@media screen and (max-width: 1240px) {
+  #pricelist .pricelist-outer {
+  	width: 90%;
+  }
+
+  #offer .offer-outer {
+    width: 90%;
+  }
+}
+
+/* ==============================
+    Content under 1030 px
+   ============================== */
+@media screen and (max-width: 1030px) {
+  #pricelist .content-outer {
+    width: 95%;
+  }
+}
+
+/* ==============================
+    Content under 991 px
+   ============================== */
+@media screen and (max-width: 991px) {
+  #pricelist .content-outer {
+    width: 70%;
+  }
+
+  #offer .offer-outer {
+    width: 100%;
+  }
+
+  .image-wrapper {
+    margin: 10px auto;
+  }
+}
+
+/* ==============================
+    Content under 840px
+   ============================== */
+@media screen and (max-width: 840px) {
+  #pricelist .content-outer {
+    width: 75%;
+  }
+}
+
+/* ==============================
+    Content under 767px
+   ============================== */
+@media screen and (max-width: 767px) {
+  .about-me-inner {
+    width: 90%;
+  }
+
+  .icons-testmionial-outer {
+    height: 150px;
+  }
+
+  #pricelist .content-outer {
+    width: 80%;
+  }
+
+  .btn-send {
+    float: left;
+    margin-left: -15px;
+  }
+}
+
+/* ==============================
+    Content under 650px
+   ============================== */
+@media screen and (max-width: 650px) {
+  #pricelist .content-outer {
+    width: 90%;
+  }
+  .intro-container-inner h2 {
+    white-space: normal;
+  }
+  h2 {
+    font-size: 36px;
+    line-height: 44px;
+  }
+
+  .p-logo-descr {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .intro-buttons :first-child{
+    margin-bottom: 10px;
+  }
+}
+
+/* ==============================
+    Content under 520 px
+   ============================== */
+@media screen and (max-width: 520px) {
+  #pricelist .content-outer {
+    width: 97%;
+  }
+
+  .prlst-product {
+    width: 300px;
+  }
+}
+
+/* ==============================
+    Content under 445 px
+   ============================== */
+@media screen and (max-width: 445px) {
+  #pricelist .content-outer {
+    width: 100%;
+  }
+
+  .prlst-product {
+    width: 230px;
+  }
+}
+
+/* ==============================
+    Content under 425 px
+   ============================== */
+@media screen and (max-width: 425px) {
+  .form-group {
+    width: 100%;
+  }
+
+  .prlst-product {
+    width: 200px;
+  }
+}
+
+/* ==============================
+    Content under 375 px
+   ============================== */
+@media screen and (max-width: 375px) {
+  .prlst-product {
+    width: 200px;
+  }
+
+  .contact-inner .icons-descr {
+    margin-left: 5px;
+  }
+}
+
+/* ==============================
+    Content under 325 px
+   ============================== */
+@media screen and (max-width: 325px) {
+  .prlst-product {
+    width: 160px;
+  }
+
+  .contact-inner {
+    width: 200px;
+  }
+}
