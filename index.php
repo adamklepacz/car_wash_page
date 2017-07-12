@@ -404,88 +404,88 @@
                   </div><!-- /.col-md-12 -->
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-6">
-									<?php
-										if (count($_POST))
-										{
-											////////// USTAWIENIA //////////
-											$email = 'myjniabukownica@gmail.com';	// Adres e-mail adresata
-											$subject = 'Zapytanie o usługę detailingu';	// Temat listu
-											$message = 'Wiadomość została wysłana!';	// Komunikat
-											$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
-											$charset = 'UTF-8';	// Strona kodowa
-											//////////////////////////////
-											$head =
-												"MIME-Version: 1.0\r\n" .
-												"Content-Type: text/plain; charset=$charset\r\n" .
-												"Content-Transfer-Encoding: 8bit";
-											$body = '';
-											foreach ($_POST as $name => $value)
-											{
-												if (is_array($value))
-												{
-													for ($i = 0; $i < count($value); $i++)
-													{
-														$body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value[$i]) : $value[$i]) . "\r\n";
-													}
-												}
-												else $body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value) : $value) . "\r\n";
-											}
-											echo mail($email, "=?$charset?B?" . base64_encode($subject) . "?=", $body, $head) ? $message : $error;
-										}
-										else
-										{ ?>
-											<form method="post" class="contact-form" id="contact_form">
-                    <div class="col-md-12">
+		<?php
+			if (count($_POST))
+			{
+				////////// USTAWIENIA //////////
+				$email = 'myjniabukownica@gmail.com';	// Adres e-mail adresata
+				$subject = 'Zapytanie o usługę detailingu';	// Temat listu
+				$message = 'Wiadomość została wysłana!';	// Komunikat
+				$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
+				$charset = 'UTF-8';	// Strona kodowa
+				//////////////////////////////
+				$head =
+					"MIME-Version: 1.0\r\n" .
+					"Content-Type: text/plain; charset=$charset\r\n" .
+					"Content-Transfer-Encoding: 8bit";
+				$body = '';
+				foreach ($_POST as $name => $value)
+				{
+					if (is_array($value))
+					{
+						for ($i = 0; $i < count($value); $i++)
+						{
+							$body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value[$i]) : $value[$i]) . "\r\n";
+						}
+					}
+					else $body .= "$name=" . (get_magic_quotes_gpc() ? stripslashes($value) : $value) . "\r\n";
+				}
+				echo mail($email, "=?$charset?B?" . base64_encode($subject) . "?=", $body, $head) ? $message : $error;
+			}
+			else
+			{ ?>
+				<form method="post" class="contact-form" id="contact_form">
+			<div class="col-md-12">
 
-                      <!-- name -->
-                      <div class="form-group">
-                        <input type="text" name="name" id="name" class="inpt-field" placeholder="IMIĘ, NAZWISKO" required>
-                      </div><!-- /.form-group -->
+				<!-- name -->
+				<div class="form-group">
+					<input type="text" name="name" id="name" class="inpt-field" placeholder="IMIĘ, NAZWISKO" required>
+				</div><!-- /.form-group -->
 
-                    </div><!-- /.col-md-12 -->
+			</div><!-- /.col-md-12 -->
 
-                    <div class="col-md-12">
+			<div class="col-md-12">
 
-                      <!-- email -->
-                      <div class="form-group">
-                        <input type="text" name="email" id="email" class="inpt-field" placeholder="EMAIL" required>
-                      </div><!-- /.form-group -->
+				<!-- email -->
+				<div class="form-group">
+					<input type="text" name="email" id="email" class="inpt-field" placeholder="EMAIL" required>
+				</div><!-- /.form-group -->
 
-                    </div><!-- /.col-md-12 -->
+			</div><!-- /.col-md-12 -->
 
-                    <div class="col-md-12">
+			<div class="col-md-12">
 
-                      <!-- message -->
-                      <div class="form-group">
-                        <textarea type="message" name="message" id="message" class="inpt-field" placeholder="WIADOMOŚĆ" required></textarea>
-                      </div><!-- /.form-group -->
+				<!-- message -->
+				<div class="form-group">
+					<textarea type="message" name="message" id="message" class="inpt-field" placeholder="WIADOMOŚĆ" required></textarea>
+				</div><!-- /.form-group -->
 
-                      <div class="form-group">
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+				<div class="form-group">
+					<div class="col-md-6 col-sm-6 col-xs-12">
 
-                          <!-- form tip -->
-                          <div class="form-tip">
-                            <span class="icon-info text"></span>
-                            <span class="text">"Wszystkie pola są wymagane"</span>
-                          </div><!-- /.form-tip -->
+						<!-- form tip -->
+						<div class="form-tip">
+							<span class="icon-info text"></span>
+							<span class="text">"Wszystkie pola są wymagane"</span>
+						</div><!-- /.form-tip -->
 
-                        </div><!-- /.col-md-6 -->
-                        <div class="col-md-6 col-sm-6 col-xs-12">
+					</div><!-- /.col-md-6 -->
+					<div class="col-md-6 col-sm-6 col-xs-12">
 
-                          <!-- Send button -->
-                          <div class="align-right">
-                            <input type="submit" class="btn-basic btn-send" value="WYŚLIJ EMAIL"></input>
-                          </div><!-- align-right -->
+						<!-- Send button -->
+						<div class="align-right">
+							<input type="submit" class="btn-basic btn-send" value="WYŚLIJ EMAIL"></input>
+						</div><!-- align-right -->
 
-                        </div><!-- /.col-md-6 -->
-                        <div class="clearer"></div>
-                      </div><!-- /.form-group -->
+					</div><!-- /.col-md-6 -->
+					<div class="clearer"></div>
+				</div><!-- /.form-group -->
 
-                    </div><!-- /.col-md-12 -->
-                  </form><!-- /.contact-form -->
-											<?php
-										}
-										?>
+			</div><!-- /.col-md-12 -->
+		</form><!-- /.contact-form -->
+				<?php
+			}
+			?>
                 </div><!-- /.col-md-6 -->
               </div><!-- /.content-outer -->
             </div><!-- /.row -->
