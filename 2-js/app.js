@@ -22,7 +22,7 @@ $(function($)
 Google Map
 --------------------------------------------- */
 function initMap() {
-  var bukownica = {lat: 51.469482, lng: 18.050946};
+  var bukownica = {lat: 51.454868, lng: 18.062114};
   var map = new google.maps.Map(document.getElementById('map'), {
     scrollwheel: false,
     zoom: 11,
