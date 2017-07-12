@@ -501,5 +501,11 @@
         </div><!-- /.container -->
       </footer><!-- /footer-->
     </div><!-- /.page-wrapper -->
+    
+    <?php if ($mailMessage): ?>
+	  	<script>
+		 		document.querySelector('#contact_form').scrollIntoView();
+	    </script>
+    <?php endif; ?>
   </body>
 </html>
