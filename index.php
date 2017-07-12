@@ -404,7 +404,7 @@
                   </div><!-- /.col-md-12 -->
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-6">
-                	 <?php
+									<?php
 										if (count($_POST))
 										{
 											////////// USTAWIENIA //////////
@@ -414,7 +414,6 @@
 											$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
 											$charset = 'UTF-8';	// Strona kodowa
 											//////////////////////////////
-
 											$head =
 												"MIME-Version: 1.0\r\n" .
 												"Content-Type: text/plain; charset=$charset\r\n" .
@@ -435,7 +434,7 @@
 										}
 										else
 										{ ?>
-                  		<form method="post" class="contact-form" id="contact_form">
+											<form method="post" class="contact-form" id="contact_form">
                     <div class="col-md-12">
 
                       <!-- name -->
@@ -486,7 +485,7 @@
                   </form><!-- /.contact-form -->
 											<?php
 										}
-											?>
+										?>
                 </div><!-- /.col-md-6 -->
               </div><!-- /.content-outer -->
             </div><!-- /.row -->
