@@ -406,12 +406,11 @@
                 </div><!-- /.col-md-6 -->
                 <div class="col-md-6">
 									<form method="post" class="contact-form" id="contact_form">
+										
+										<div class="col-md-12">
 											<?php if ($mailMessage): ?>
 												<span><?php echo $mailMessage; ?></span>
 											<?php endif; ?>
-
-										<div class="col-md-12">
-
 											<!-- name -->
 											<div class="form-group">
 												<input type="text" name="name" id="name" class="inpt-field" placeholder="IMIĘ, NAZWISKO" required>
@@ -502,10 +501,10 @@
       </footer><!-- /footer-->
     </div><!-- /.page-wrapper -->
     
-    <?php if ($mailMessage): ?>
+     <?php if ($mailMessage): ?>
 	  	<script>
-		 		document.querySelector('#contact_form').scrollIntoView();
-	    </script>
+		  	window.onload = function() { document.querySelector('#contact').scrollIntoView(); }
+			</script>
     <?php endif; ?>
   </body>
 </html>

@@ -7,7 +7,7 @@ if (count($_POST))
 				////////// USTAWIENIA //////////
 				$email = 'myjniabukownica@gmail.com';	// Adres e-mail adresata
 				$subject = 'Zapytanie o usługę detailingu';	// Temat listu
-				$message = 'Wiadomość została wysłana!';	// Komunikat
+				$message = '<span class="text text-center">Wiadomość została wysłana!</span>';	// Komunikat
 				$error = 'Wystąpił błąd podczas wysyłania formularza';	// Komunikat błędu
 				$charset = 'UTF-8';	// Strona kodowa
 				//////////////////////////////
