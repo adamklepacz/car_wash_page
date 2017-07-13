@@ -18,7 +18,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="2-js/scrollreveal.min.js"></script>
     <script src="2-js/scroll.js"></script>
-    <script src="2-js/app.js"></script>
+    <script src="2-js/app.min.js"></script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBvSUS3JqjTKqqA35cu1pHhot1x_ik7ADA&callback=initMap">
     </script>
@@ -27,9 +27,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="1-css/fontello.css">
-    <link rel="stylesheet" href="1-css/app.css">
-    <link rel="stylesheet" href="1-css/app_responsive.css">
+    <link rel="stylesheet" href="1-css/fontello.min.css">
+    <link rel="stylesheet" href="1-css/app.min.css" expires>
+    <link rel="stylesheet" href="1-css/app_responsive.min.css">
 
 
   </head>
@@ -409,7 +409,7 @@
 										
 										<div class="col-md-12">
 											<?php if ($mailMessage): ?>
-												<span><?php echo $mailMessage; ?></span>
+												<span class="form-message"><?php echo $mailMessage; ?></span>
 											<?php endif; ?>
 											<!-- name -->
 											<div class="form-group">
