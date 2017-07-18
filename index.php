@@ -375,7 +375,7 @@
                 <div class="col-md-6">
                   <div class="col-md-12">
                     <div class="contact-inner">
-                      <a href="tel:+48535432771">
+                      <a href="tel:+48667331810">
                         <span class="icons-wrapper-icon text">
                           <span class="icon-phone text"></span>
                         </span>
